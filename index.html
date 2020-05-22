@@ -7,7 +7,7 @@
   </head>
   <body>
   	<header>
-      <a>
+      <a href="#">
       	<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
       </a>
       <nav>
@@ -23,7 +23,7 @@
 
     <main>
     	<section>
-    		<h2>Cлайдер</h2>
+    		<h2 class="visually-hidden">Cлайдер</h2>
     		<ul>
     			<li> 
     				<article>
@@ -58,7 +58,7 @@
     	</section>
 
       <section>
-      	<h2>Преимущества</h2>
+      	<h2 class="visually-hidden">Преимущества</h2>
       	<ul>
       	  <li>
             <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
@@ -101,19 +101,35 @@
 	      	</ul>
 	      </article>
 	      <ul>
-	      	<li><img src="img/html-academy.png" width="200" height="68" alt="Логотип HTML Academy"></li>
-	      	<li><img src="img/borodinski.png" width="209" height="90" alt="Логотип студии Borodinski"></li>
-	      	<li><img src="img/pink.png" width="185" height="52" alt="Логотип студии PINK"></li>
-	      	<li><img src="img/mishka.png" width="173" height="84" alt="Логотип студии Mishka"></li>
+	        <li>
+	        	<a href="https://htmlacademy.ru/intensive/htmlcss">
+	        		<img src="img/html-academy.png" width="200" height="68" alt="Логотип HTML Academy">
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="#">
+	        		<img src="img/borodinski.png" width="209" height="90" alt="Логотип студии Borodinski">
+	        	</a>
+	        </li>
+	      	<li>
+	      		<a href="#">
+	      			<img src="img/pink.png" width="185" height="52" alt="Логотип студии PINK">
+						</a>
+	      	</li>
+	      	<li>
+	      		<a href="#">
+	      			<img src="img/mishka.png" width="173" height="84" alt="Логотип студии Mishka">
+						</a>
+	      	</li>
 	      </ul>
       </section>
 
       <section>
-      	<h2>Контакты</h2>
+      	<h2 class="visually-hidden">Контакты</h2>
       	<div> 
 	      	<h3>Nerds design studio</h3>
-	    	  <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-	    	  <p>тел. +7(812)275-75-75</p>
+	    	  <p>191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
+	    	  <a href="tel:78122757575">тел. +7(812)275-75-75</a>
 	    	  <button type="button">Напишите нам</button>
 	    	</div>
       </section>
@@ -140,6 +156,26 @@
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+
+    <section>
+    	<h2>Напишите нам</h2>
+    	<button type="button">Закрыть</button>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="form-name">Ваше имя:</label>
+					<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+				</p>
+    		<p>
+					<label for="form-email">Ваш email:</label>
+					<input id="form-email" type="email" name="email" placeholder="email@example.com">
+				</p>
+				<p>
+					<label for="form-text">Текст письма:</label>
+					<textarea id="form-text" name="text" placeholder="В свободной форме"></textarea> 
+				</p>
+				<button type="submit">Отправить</button>
+    	</form>
+    </section>
 	</body>
 </html>
 
