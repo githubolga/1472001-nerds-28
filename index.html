@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
   	<header>
-      <a href="#">
+      <a class="logo" href="#">
       	<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
       </a>
-      <nav>
-        <ul>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
@@ -57,26 +58,32 @@
         </div>
     	</section>
 
-      <section>
+      <section class="features">
       	<h2 class="visually-hidden">Преимущества</h2>
-      	<ul>
-      	  <li>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+      	<ul class="features__list">
+      	  <li class="features__item">
+            <div class="features__image features__image_pink">
+            	<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            </div>
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button type="button">Заказать</button>
+            <button class="features__button features__button_pink" type="button">Заказать</button>
           </li>
-          <li>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+          <li class="features__item">
+          	<div class="features__image features__image_green">
+            	<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+          	</div>
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
-            <button type="button">Заказать</button>
+            <button class="features__button features__button_green" type="button">Заказать</button>
           </li>
-          <li>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+          <li class="features__item">
+          	<div class="features__image features__image_yellow">
+            	<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+            </div>
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button type="button">Заказать</button>
+            <button class="features__button features__button_yellow" type="button">Заказать</button>
           </li>
         </ul>
       </section>
@@ -157,7 +164,7 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 
-    <section>
+    <section class="modal block-hide">
     	<h2>Напишите нам</h2>
     	<button type="button">Закрыть</button>
 			<form action="https://echo.htmlacademy.ru" method="post">
