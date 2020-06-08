@@ -8,6 +8,7 @@
   </head>
   <body>
     <header class="header">
+      <div class="header_wrapper">
       <a class="logo" href="index.html">
         <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
       </a>
@@ -20,7 +21,8 @@
           <li class="main-menu__item main-menu__item_cart"><a href="blank.html">Корзина</a></li>
         </ul>
       </nav>
-      <div>
+      </div>
+      <div class="haeder_name">
         <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
@@ -43,7 +45,7 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filters__grid">
               <legend>Сетка:</legend>
               <ul class="filters__list_radio">
                 <li>
@@ -61,7 +63,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filters__features">
               <legend>Особенности:</legend>
               <ul class="filters__list_checkbox">
                 <li>
@@ -93,23 +95,23 @@
 
       
       <section class="page-content">
-        <div class="filters__sort">
+        <div class="sort">
           <h3>Сортировать</h3>
           <ul>
             <li>
-               <button type="button">По цене</button>
+               <button class="sort__button sort__button_active" type="button">По цене</button>
             </li>
             <li>
-               <button type="button">По типу</button>
+               <button class="sort__button" type="button">По типу</button>
             </li>
             <li>
-               <button type="button">По названию</button>
+               <button class="sort__button" type="button">По названию</button>
             </li>
             <li>
-               <button class="filters__sort_down" type="button">По убыванию</button>
+               <button class="sort__down" type="button">По убыванию</button>
             </li>
             <li>
-               <button class="filters__sort_up" type="button">По возрастанию</button>
+               <button class="sort__up" type="button">По возрастанию</button>
             </li>
           </ul>
         </div>
@@ -190,7 +192,8 @@
 
       <section class="contact">
         <h2 class="visually-hidden">Контакты</h2>
-        <div> 
+        <div class="contact__map"></div>
+        <div class="contact__info"> 
           <h3>Nerds design studio</h3>
           <p>191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
           <a href="tel:78122757575">тел. +7(812)275-75-75</a>
@@ -224,18 +227,22 @@
     </footer>
 
     <section class="modal block-hide">
-      <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+      <div class="modal__header">
+        <h2 class="modal__title">Напишите нам</h2>
+        <button class="modal__close"type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
+      </div>
+      <form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="contact-us__user">
+        <p class="contact-us__item">
           <label for="form-name">Ваше имя:</label>
           <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="contact-us__item">
           <label for="form-email">Ваш email:</label>
           <input id="form-email" type="email" name="email" placeholder="email@example.com">
         </p>
-        <p>
+        </div>
+        <p class="contact-us__item">
           <label for="form-text">Текст письма:</label>
           <textarea id="form-text" name="text" placeholder="В свободной форме"></textarea> 
         </p>

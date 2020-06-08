@@ -8,46 +8,57 @@
   </head>
   <body>
   	<header class="header">
-      <a class="logo" href="#">
-      	<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
-      </a>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item"><a href="blank.html">Студия</a></li>
-          <li class="main-menu__item"><a href="blank.html">Клиенты</a></li>
-          <li class="main-menu__item"><a href="catalog.html">Магазин</a></li>
-          <li class="main-menu__item"><a href="blank.html">Контакты</a></li>
-          <li class="main-menu__item main-menu__item_cart"><a href="blank.html">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
+  		<div class="header_wrapper">
+	      <a class="logo" href="#">
+	      	<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+	      </a>
+	      <nav class="main-menu">
+	        <ul class="main-menu__list">
+	          <li class="main-menu__item"><a href="blank.html">Студия</a></li>
+	          <li class="main-menu__item"><a href="blank.html">Клиенты</a></li>
+	          <li class="main-menu__item"><a href="catalog.html">Магазин</a></li>
+	          <li class="main-menu__item"><a href="blank.html">Контакты</a></li>
+	          <li class="main-menu__item main-menu__item_cart"><a href="blank.html">Корзина</a></li>
+	        </ul>
+	      </nav>
+      </div>
     	<section class="slider">
     		<h2 class="visually-hidden">Cлайдер</h2>
-    		<ul>
-    			<li> 
-    				<article>
-							<h2>Долго, дорого, скрупулезно</h2>
-    					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-    					<button class="slider__button" type="button"><span>Узнать больше</span></button>
-    					<img src="img/slide-1.png" width="760" height="431" alt="Долго, дорого, скрупулезно">
+    		<ul class="slider__list">
+    			<li class="slider__item"> 
+    				<article class="slide">
+    					<div class="slide__content">
+								<h2 class="slide__title">Долго, дорого, скрупулезно</h2>
+	    					<p class="slide__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+	    					<button class="slide__button" type="button"><span>Узнать больше</span></button>
+    				  </div>
+    				  <div class="slide__image">
+    						<img src="img/slide-1.png" width="760" height="431" alt="Долго, дорого, скрупулезно">
+    					</div>
     		    </article>
     		  </li>
-    		  <li> 
-    				<article>
-							<h2>Любим математику  как никто другой</h2>
-    					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-    					<button class="slider__button" type="button"><span>Узнать больше</span></button>
-    					<img src="img/slide-2.png" width="760" height="431" alt="Любим математику  как никто другой">
+    		  <li class="slider__item"> 
+    				<article class="slide">
+    					<div class="slide__content">
+								<h2 class="slide__title">Любим математику  как никто другой</h2>
+	    					<p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+	    					<button class="slide__button" type="button"><span>Узнать больше</span></button>
+	    				</div>
+	    				<div class="slide__image">
+    						<img src="img/slide-2.png" width="760" height="431" alt="Любим математику  как никто другой">
+    					</div>
     		    </article>
     		  </li>
-    		  <li> 
-    				<article>
-							<h2>Только ночь, только хардкор</h2>
-    					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-    					<button class="slider__button" type="button"><span>Узнать больше</span></button>
-    					<img src="img/slide-3.png" width="760" height="431" alt="Только ночь, только хардкор">
+    		  <li class="slider__item"> 
+    				<article class="slide">
+    					<div class="slide__content">
+								<h2 class="slide__title">Только ночь, только хардкор</h2>
+	    					<p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+	    					<button class="slide__button" type="button"><span>Узнать больше</span></button>
+	    				</div>	
+	    				<div class="slide__image">
+    						<img src="img/slide-3.png" width="760" height="431" alt="Только ночь, только хардкор">
+    					</div>
     		    </article>
     		  </li>
         </ul>
@@ -57,8 +68,10 @@
         	<button type="button">3</button>
         </div>
     	</section>
+    </header>
 
-      <section class="features">
+    <main>
+    	 <section class="features">
       	<h2 class="visually-hidden">Преимущества</h2>
       	<ul class="features__list">
       	  <li class="features__item">
@@ -89,12 +102,12 @@
       </section>
 
       <section class="about-us">
-      	<div>
+      	<div class="about-us__content">
       		<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 	      	<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 	        </p>
 	        <h4>Выполняем заказы на разработку</h4>
-	        <ul>
+	        <ul class="about-us__list">
 	        	<li>Веб-сайтов любой сложности</li>
 	        	<li>Мобильных приложений для IOS и Android</li>
 	        	<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -103,29 +116,30 @@
         <article class="statistic">                     
 	        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии Nerds">
 	        <h4>С 2004 года любим точность во всем:</h4>
-	      	<ul>
+	      	<ul class="statistic__list">
 	      		<li><span>146<sup>%</sup></span>Уровень самоотдачи</li>
 	      		<li><span>100<sup>%</sup></span>Соблюдение сроков</li>
 	      		<li><span>50<sup>%</sup></span>Минимальная предоплата</li>
 	      	</ul>
 	      </article>
+
 	      <ul class="clients">
-	        <li class="clients__list">
+	        <li class="clients__item">
 	        	<a href="https://htmlacademy.ru/intensive/htmlcss">
 	        		<img src="img/html-academy.png" width="200" height="68" alt="Логотип HTML Academy">
 	        	</a>
 	        </li>
-	        <li class="clients__list">
+	        <li class="clients__item">
 	        	<a href="#">
 	        		<img src="img/borodinski.png" width="209" height="90" alt="Логотип студии Borodinski">
 	        	</a>
 	        </li>
-	      	<li class="clients__list">
+	      	<li class="clients__item">
 	      		<a href="#">
 	      			<img src="img/pink.png" width="185" height="52" alt="Логотип студии PINK">
 						</a>
 	      	</li>
-	      	<li class="clients__list">
+	      	<li class="clients__item">
 	      		<a href="#">
 	      			<img src="img/mishka.png" width="173" height="84" alt="Логотип студии Mishka">
 						</a>
@@ -135,7 +149,8 @@
 
       <section class="contact">
         <h2 class="visually-hidden">Контакты</h2>
-        <div> 
+        <div class="contact__map"></div>
+        <div class="contact__info"> 
           <h3>Nerds design studio</h3>
           <p>191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
           <a href="tel:78122757575">тел. +7(812)275-75-75</a>
@@ -169,18 +184,22 @@
     </footer>
 
     <section class="modal">
-    	<h2>Напишите нам</h2>
-    	<button class="modal__close"type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
+    	<div class="modal__header">
+	    	<h2 class="modal__title">Напишите нам</h2>
+	    	<button class="modal__close"type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
+    	</div>
 			<form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
-				<p>
+				<div class="contact-us__user">
+				<p class="contact-us__item">
 					<label for="form-name">Ваше имя:</label>
 					<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
 				</p>
-    		<p>
+    		<p class="contact-us__item">
 					<label for="form-email">Ваш email:</label>
 					<input id="form-email" type="email" name="email" placeholder="email@example.com">
 				</p>
-				<p>
+				</div>
+				<p class="contact-us__item">
 					<label for="form-text">Текст письма:</label>
 					<textarea id="form-text" name="text" placeholder="В свободной форме"></textarea> 
 				</p>
