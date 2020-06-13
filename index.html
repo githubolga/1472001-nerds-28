@@ -14,11 +14,22 @@
 	      </a>
 	      <nav class="main-menu">
 	        <ul class="main-menu__list">
-	          <li class="main-menu__item"><a href="blank.html">Студия</a></li>
-	          <li class="main-menu__item"><a href="blank.html">Клиенты</a></li>
-	          <li class="main-menu__item"><a href="catalog.html">Магазин</a></li>
-	          <li class="main-menu__item"><a href="blank.html">Контакты</a></li>
-	          <li class="main-menu__item main-menu__item_cart"><a href="blank.html">Корзина</a></li>
+	          <li class="main-menu__item">
+	          	<a class="main-menu__link" href="blank.html">Студия</a>
+	          </li>
+	          <li class="main-menu__item">
+	          	<a class="main-menu__link" href="blank.html">Клиенты</a></li>
+	          <li class="main-menu__item">
+	          	<a class="main-menu__link" href="catalog.html">Магазин</a>
+	          </li>
+	          <li class="main-menu__item">
+	          	<a class="main-menu__link" href="blank.html">Контакты</a>
+	          </li>
+	          <li class="main-menu__item main-menu__item_cart">
+	          	<a class="main-menu__link" href="blank.html">
+								<svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg> Корзина
+							</a>
+	          </li>
 	        </ul>
 	      </nav>
       </div>
@@ -28,8 +39,8 @@
     			<li class="slider__item"> 
     				<article class="slide">
     					<div class="slide__content">
-								<h2 class="slide__title">Долго, дорого, скрупулезно</h2>
-	    					<p class="slide__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+								<h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
+	    					<p class="slide__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
 	    					<button class="slide__button" type="button"><span>Узнать больше</span></button>
     				  </div>
     				  <div class="slide__image">
@@ -37,7 +48,7 @@
     					</div>
     		    </article>
     		  </li>
-    		  <li class="slider__item"> 
+    		  <!-- <li class="slider__item"> 
     				<article class="slide">
     					<div class="slide__content">
 								<h2 class="slide__title">Любим математику  как никто другой</h2>
@@ -60,12 +71,12 @@
     						<img src="img/slide-3.png" width="760" height="431" alt="Только ночь, только хардкор">
     					</div>
     		    </article>
-    		  </li>
+    		  </li> -->
         </ul>
-        <div>
-        	<button type="button">1</button>
-        	<button type="button">2</button>
-        	<button type="button">3</button>
+        <div class="slider__controls">
+        	<button class="slider__button slider__button_active" type="button"></button>
+        	<button class="slider__button" type="button"></button>
+        	<button class="slider__button" type="button"></button>
         </div>
     	</section>
     </header>
@@ -78,24 +89,24 @@
             <div class="features__image features__image_pink">
             	<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
             </div>
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <h3 class="features__title">Веб-сайты</h3>
+            <p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <button class="features__button features__button_pink" type="button"><span>Заказать</span></button>
           </li>
           <li class="features__item">
           	<div class="features__image features__image_green">
             	<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
           	</div>
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
+            <h3 class="features__title">Приложения</h3>
+            <p class="features__text">Покорите топ-10 приложений в AppStore и Google Play!</p>
             <button class="features__button features__button_green" type="button"><span>Заказать</span></button>
           </li>
           <li class="features__item">
           	<div class="features__image features__image_yellow">
             	<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
             </div>
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <h3 class="features__title">Презентации</h3>
+            <p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <button class="features__button features__button_yellow" type="button"><span>Заказать</span></button>
           </li>
         </ul>
@@ -103,23 +114,28 @@
 
       <section class="about-us">
       	<div class="about-us__content">
-      		<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-	      	<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+      		<h1 class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.
+      		</h1>
+	      	<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 	        </p>
-	        <h4>Выполняем заказы на разработку</h4>
+	        <h4 class="about-us__title_small">Выполняем заказы на разработку:</h4>
 	        <ul class="about-us__list">
-	        	<li>Веб-сайтов любой сложности</li>
-	        	<li>Мобильных приложений для IOS и Android</li>
-	        	<li>Слайдшоу и видео для корпоративных презентаций</li>
+	        	<li class="about-us__item">Веб-сайтов любой сложности</li>
+	        	<li class="about-us__item">Мобильных приложений для IOS и Android</li>
+	        	<li class="about-us__item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul> 
         </div>  
         <article class="statistic">                     
-	        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии Nerds">
-	        <h4>С 2004 года любим точность во всем:</h4>
+	        <img class="statistic_logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии Nerds">
+	        <h4 class="statistic_title">С 2004 года любим точность во всем:</h4>
 	      	<ul class="statistic__list">
-	      		<li><span>146<sup>%</sup></span>Уровень самоотдачи</li>
-	      		<li><span>100<sup>%</sup></span>Соблюдение сроков</li>
-	      		<li><span>50<sup>%</sup></span>Минимальная предоплата</li>
+	      		<li class="statistic__item">
+	      			<span class="statistic__list_numbers">146<sup>%</sup></span>Уровень самоотдачи
+	      		</li>
+	      		<li class="statistic__item">
+	      			<span class="statistic__list_numbers">100<sup>%</sup></span>Соблюдение сроков</li>
+	      		<li class="statistic__item">
+	      			<span class="statistic__list_numbers">50<sup>%</sup></span>Минимальная предоплата</li>
 	      	</ul>
 	      </article>
 
