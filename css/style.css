@@ -45,8 +45,9 @@
 }
 
 body {
+  width: 100%;
   min-width: 1440px;
-  width: 1440px;
+  max-width: 1440px;
 	margin: 0 auto;
  	font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -64,13 +65,6 @@ img {
   height: auto;
 }
 
-body h1 {
-	text-align: center;
-	font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  color: var(--basic-black);
-}
 
 .visually-hidden {
 	position: absolute;
@@ -100,18 +94,22 @@ body h1 {
 	padding-top: 49px;
 }
 
-.header_wrapper {
+.header__wrapper {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	align-items: center;
 }
 
-.haeder_name {
-	display: flex;
+.header__title {
 	width: 100%;
-	margin-top: 87px 0 0 0;
-	justify-content: center;
+	text-align: center;
+	font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+	margin: 72px 0 0 0;
+	padding-bottom: 107px;
 }
 
 .logo {
@@ -120,6 +118,59 @@ body h1 {
 }
 .logo:active {
 	opacity: 0.3;
+}
+
+/*MAIN MENU*/
+
+.main-menu {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 11px;
+}
+
+.main-menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.main-menu__item {
+	margin-right: 44px;
+}
+
+.main-menu__item_cart {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.main-menu__link {
+	line-height: 30px;
+	font-weight: 500;
+	color: var(--basic-black); 
+	text-transform: uppercase;
+}
+
+.main-menu__link:hover {
+	color: var(--basic-pink);
+}
+
+.main-menu__link:active {
+	color: var(--basic-black);
+	opacity: 0.3;
+}
+
+.main-menu__link_active {
+	border-bottom: 2px solid #FB565A;
+	padding-bottom: 18px;
+}
+
+.icon-cart {
+	margin-right: 22px;
 }
 
 /*SLIDERS*/
@@ -146,7 +197,7 @@ body h1 {
 }
 
 .slide__content {
-width: 400px;
+	width: 400px;
 }
 
 .slide__title {
@@ -238,67 +289,12 @@ border: 2px solid var(--gray-slider-active);
 box-sizing: border-box;
 }
 
-/*MAIN MENU*/
-
-main {
-	padding: 0 140px;
-}
-
-.main-menu {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 11px;
-}
-
-.main-menu__list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width: 100%;
-}
-
-.main-menu__item {
-	margin-right: 44px;
-}
-
-.main-menu__item_cart {
-	margin-right: 0;
-	margin-left: auto;
-}
-
-.main-menu__link {
-	line-height: 30px;
-	font-weight: 500;
-	color: var(--basic-black); 
-	text-transform: uppercase;
-	padding-bottom: 13px;
-}
-
-.main-menu__link:hover {
-	color: var(--basic-pink);
-}
-
-.main-menu__link:active {
-	color: var(--basic-black);
-	opacity: 0.3;
-}
-
-.main-menu__link_active {
-	border-bottom: 2px solid #FB565A;
-}
-
-.icon-cart {
-	margin-right: 22px;
-}
 
 /*FEATURES*/
 
 .features {
 	margin-bottom: 80px;
+	padding: 0 140px;
 }
 
 .features__image {
@@ -329,7 +325,8 @@ main {
 }
 
 .features__text {
-	margin: 0 19px 32px 0;
+	margin: 0 0 32px 0;
+	width: 280px;
 }
 
 .features__list {
@@ -413,9 +410,10 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 73px;
+	padding: 0 140px 0 140px;
 	border-top: 2px solid #EEEEEE;
-	}
+	margin-bottom: 79px;
+}
 
 .about-us__content {
 	width: 700px;
@@ -426,31 +424,30 @@ main {
 	line-height: 45px;
 	color: var(--basic-black);
 	text-align: left;
-	margin-top: 0px;
+	margin: 73px 0 30px 0;
 }
 
 .about-us__text {
-	margin-right: 12px;
-	padding-top: 3px;
+	margin: 0 0 43px 0;
+  width: 650px;
 } 
 
-.about-us__title_small {
+.about-us__subtitle {
 	text-transform: uppercase;
 	font-weight: 700;
-	padding-top: 20px;
+	margin: 0 0 23px 0;
 } 
 
 .about-us__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	padding-left: 32px;
 }
 
 .about-us__item {
 	position: relative;
 	margin-bottom: 25px;
-  margin-left: 3px;
+  padding-left: 36px;
 }
 
 .about-us__item:nth-child(3) {
@@ -460,7 +457,7 @@ main {
 .about-us__item:before {
 	content: "";
 	position: absolute;
-	left: -35px;
+	left: 0;
   top: 11px;
 	border-bottom: 2px solid var(--basic-pink);
 	width: 25px;
@@ -469,28 +466,26 @@ main {
 .statistic {
 	width: 360px;
 	padding-bottom: 75px;
+	margin-top: 38px;
 }
 
-.statistic_logo {
+.statistic__logo {
 	margin-bottom: 30px;
-  margin-top: -34px;
 }
 
-.statistic_title {
+.statistic__title {
 	font-weight: 700;
 	font-size: inherit;
 	line-height: 24px;
 	color: var(--basic-black);
 	text-align: center;
 	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
+	margin: 0 0 31px 0;
 }
 
 .statistic__list {
-	margin: 31px 0 0 0;
-  margin-right: -30px;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -500,10 +495,10 @@ main {
 	line-height: 18px;
 	display: flex;
 	flex-direction: column;
-	width: 33,33%;
+	width: 33.33%;
 }
 
-.statistic__list_numbers {
+.statistic__count {
 	position: relative;
 	font-weight: 700;
 	font-size: 45px;
@@ -527,7 +522,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 46px 0 39px;
+	padding: 46px 0 38px;
 	list-style: none;
 	width: 100%;
 	align-items: center;
@@ -538,7 +533,11 @@ main {
 
 .clients__item {
 	width: 25%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 	text-align: center;
+	position: relative;
 }
 
 .clients__item a {
@@ -553,55 +552,76 @@ main {
 	opacity: 0.1;
 }
 
+.clients__item:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	width: 2px;
+	height: 52px;
+	background-color: var(--basic-gray);
+}
+
+.clients__item:last-child:after {
+	display: none;
+}
+
 /*CONTACT*/
 
 .contact {
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0;
-	margin-top: 79px;
-	padding: 0;
+	position: relative;
+}
+
+.contact:before {
+	content: "";
+	position: absolute;
+	top: 86px;
+	right: 387px;
+	width: 231px;
+	height: 190px;
+	background-image: url("../img/map-marker.png"); 
 }
 
 .contact__map {
 	width: 100%;
 	height: 416px;
-	background-image: url("../img/map.jpg");
-	position: relative;
 }
 
-.contact__info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.contact-info {
+	width: 320px;
 	background-color: var(--basic-white);
 	position: absolute;
+	top: 54px;
+  left: 140px;
+  padding: 50px 50px 47px 50px;
+  box-sizing: border-box;
 }
 
-.contact h3 {
+.contact-info__title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: var(--basic-black);
+	margin: 0 0 22px 0;
 }
 
-.contact p {
+.contact-info__text {
 	line-height: 18px;
 	color: var(--gray-catalog);
+	margin: 0 0 16px 0;
 }
 
-.contact a {
+.contact-info__phone {
 	line-height: 18px;
 	color: var(--gray-catalog);
 	list-style: none;
+	margin-bottom: 37px;
+ 	display: inline-block;
 }
 
- .contact button {
-	width: 219px;
+ .contact-info__button {
+	width: 220px;
 	height: 50px;
 	font-weight: 500;
 	line-height: 18px;
@@ -611,13 +631,14 @@ main {
 	text-align: center;
 	border: 0;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
-.contact button:hover {
+.contact-info__button:hover {
 	background-color: var(--basic-pink-hover);
 }
 
-.contact button:active {
+.contact-info__button:active {
 	background-color: var(--basic-pink-active);
 }
 
@@ -757,24 +778,18 @@ main {
 	padding: 0 140px;
 }
 
-.footer h2 {
+.footer__title {
 	line-height: 36px;
 	font-weight: bold;
   font-size: 36px;
 	color: var(--basic-black);
-  margin-bottom: 10px;
-}
-
-.footer p {
-	line-height: 22px;
-	color: var(--gray-footer);
-	margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .footer__text {
- 	display: flex;
-  flex-direction: column;
-  margin-top: -28px;
+	line-height: 22px;
+	color: var(--gray-footer);
+	margin: 0;
 }
 
 .social {
@@ -784,7 +799,7 @@ main {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-right: 139px;
+  margin-right: 131px;
 }
 
 .social__button {
@@ -796,6 +811,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-right: 9px;
+  cursor: pointer;
 }
 
 .social__button:hover {
@@ -807,7 +823,7 @@ main {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.social__button:active svg {
+.social__button:active .social__svg {
 	opacity: 0.3;
 }
 
@@ -1019,6 +1035,8 @@ main {
 
 .catalog__item {
 	width: 360px;
+	position: relative;
+	border-radius: 5px;
 }
 
 .catalog__info {
@@ -1029,6 +1047,8 @@ main {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 26px 50px 44px;
+	position: absolute;
+	bottom: 0;
 }
 
 .catalog__info a {
@@ -1083,6 +1103,10 @@ main {
 
 .catalog__item:hover .catalog__info {
 	display: flex;
+}
+
+.catalog__item:hover {
+	box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 /*PAGINATION*/
