@@ -40,60 +40,60 @@
       <aside class="filters">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="range">
-            <legend class="range__title">Стоимость</legend>
+            <legend class="range__title">Стоимость:</legend>
             <div class="range__content">
               <div class="range__value" style="width: 85%"></div>
-              <button class="range__button range__button--left" type="button"></button>
-              <button class="range__button range__button--right" type="button"></button>
+              <button class="range__button range__button_left" type="button"></button>
+              <button class="range__button range__button_right" type="button"></button>
             </div> 
             <div class="range__price">
-              <label class="range__text" for="range-from">От</label>
+              <label class="range__label" for="range-from">От</label>
               <input class="range__input" id="range-from" type="text" value="0">
-              <label class="range__text" for="range-to">До</label>
+              <label class="range__label" for="range-to">До</label>
               <input class="range__input" id="range-to" type="text" value="15000">
             </div>
           </fieldset>
 
           <fieldset class="filters__grid">
-              <legend>Сетка:</legend>
-              <ul class="filters__list_radio">
-                <li>
-                  <input id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
+              <legend class="filters__title">Сетка:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input id="filter-adaptive" class="filters__radio visually-hidden" type="radio" name="grid" value="adaptive" checked>
+                  <label class="filters__label" for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li>
-                  <input id="filter-fixed" type="radio" name="grid" value="fixed">
-                  <label for="filter-fixed">Фиксированная</label>
+                <li class="filters__item">
+                  <input id="filter-fixed" class="filters__radio visually-hidden" type="radio" name="grid" value="fixed">
+                  <label class="filters__label" for="filter-fixed">Фиксированная</label>
                 </li>
-                <li>
-                  <input id="filter-rubber" type="radio" name="grid" value="rubber">
-                  <label for="filter-rubber">Резиновая</label>
+                <li class="filters__item">
+                  <input id="filter-rubber" class="filters__radio visually-hidden" type="radio" name="grid" value="rubber">
+                  <label class="filters__label" for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="filters__features">
-              <legend>Особенности:</legend>
-              <ul class="filters__list_checkbox">
-                <li>
-                  <input id="filter-slider" type="checkbox" name="features" value="slider" checked>
-                  <label for="filter-slider">Слайдер</label>
+              <legend class="filters__title">Особенности:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input id="filter-slider" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="slider" checked>
+                  <label class="filters__label" for="filter-slider">Слайдер</label>
                 </li>
-                <li>
-                  <input id="filter-adventages" type="checkbox" name="features" value="adventages">
-                  <label for="filter-adventages">Блок преимущств</label>
+                <li class="filters__item">
+                  <input id="filter-adventages" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="adventages">
+                  <label class="filters__label" for="filter-adventages">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input id="filter-news" type="checkbox" name="features" value="news" checked>
-                  <label for="filter-news">Новости</label>
+                <li class="filters__item">
+                  <input id="filter-news" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="news" checked>
+                  <label class="filters__label" for="filter-news">Новости</label>
                </li>
-                <li>
-                  <input id="filter-gallery" type="checkbox" name="features" value="gallery">
-                  <label for="filter-gallery">Галерея</label>
+                <li class="filters__item">
+                  <input id="filter-gallery" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="gallery">
+                  <label class="filters__label" for="filter-gallery">Галерея</label>
                 </li>
-                <li>
-                  <input id="filter-basket" type="checkbox" name="features" value="basket">
-                  <label for="filter-basket">Корзина</label>
+                <li class="filters__item">
+                  <input id="filter-basket" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="basket">
+                  <label class="filters__label" for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -105,7 +105,7 @@
       
       <section class="page-content">
         <div class="sort">
-          <h3>Сортировать</h3>
+          <h3>Сортировать:</h3>
           <ul>
             <li>
                <button class="sort__button sort__button_active" type="button">По цене</button>
