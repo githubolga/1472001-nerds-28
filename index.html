@@ -171,7 +171,7 @@
         <div class="contact-info"> 
           <h3 class="contact-info__title">Nerds design studio</h3>
           <p class="contact-info__text">191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
-          <a class="contact-info__phone" href="tel:78122757575">тел. +7(812)275-75-75</a>
+          <a class="contact-info__phone" href="tel:78122757575" type="tel">тел. +7(812)275-75-75</a>
           <button class="contact-info__button" type="button">Напишите нам</button>
         </div>
       </section>
@@ -206,22 +206,22 @@
 	    	<h2 class="modal__title">Напишите нам</h2>
 	    	<button class="modal__close"type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
     	</div>
-			<form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
-				<div class="contact-us__user">
-				<p class="contact-us__item">
+			<form class="mailto" action="https://echo.htmlacademy.ru" method="post">
+				<div class="mailto__user">
+				<p class="mailto__item">
 					<label for="form-name">Ваше имя:</label>
 					<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
 				</p>
-    		<p class="contact-us__item">
+    		<p class="mailto__item">
 					<label for="form-email">Ваш email:</label>
 					<input id="form-email" type="email" name="email" placeholder="email@example.com">
 				</p>
 				</div>
-				<p class="contact-us__item">
+				<p class="mailto__item">
 					<label for="form-text">Текст письма:</label>
 					<textarea id="form-text" name="text" placeholder="В свободной форме"></textarea> 
 				</p>
-				<button type="submit">Отправить</button>
+				<button class="mailto__button" type="submit"><span>Отправить</span></button>
     	</form>
     </section>
 	</body>
