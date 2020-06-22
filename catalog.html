@@ -37,6 +37,7 @@
     </header>
 
     <main class="page-catalog">
+      <div class="page-catalog_wrapper">
       <aside class="filters">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="range">
@@ -108,7 +109,7 @@
           <h3>Сортировать:</h3>
           <ul>
             <li>
-               <button class="sort__button sort__button_current" type="button">По цене</button>
+               <button class="sort__button m-current" type="button">По цене</button>
             </li>
             <li>
                <button class="sort__button" type="button">По типу</button>
@@ -117,13 +118,13 @@
                <button class="sort__button" type="button">По названию</button>
             </li>
             <li>
-              <button class="sort__down sort__down_current" type="button">
-                <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#A6A6A6"/></svg>
+              <button class="sort__down m-current" type="button">
+                <svg class="sort__down-svg" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" fill="#A6A6A6"/></svg>
               </button>
             </li>
             <li>
               <button class="sort__up" type="button">
-                <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#A6A6A6"/></svg>
+                <svg class="sort__up-svg" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#A6A6A6"/></svg>
               </button>
             </li>
           </ul>
@@ -133,61 +134,86 @@
 
         <section class="catalog">
           <article class="catalog__item">
-            <div class="catalog__decor">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
+            <div class="catalog__decor m-current">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
             <img src="img/catalog_item-1.jpg" width="360" height="580" alt="Sedona">
-            <div class="catalog__info">
-              <h2><a href="#">Sedona</a></h2>
-              <p>Информационный сайт  для туристов</p>
-            <button type="button"><span>9900</span><span>&#8381;</span></button>
+            <div class="catalog__info m-current">
+              <h2 class="catalog__title"><a href="#">Sedona</a></h2>
+              <p class="catalog__text">Информационный сайт для туристов</p>
+            <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button>
           </div>
           </article>
 
          <article class="catalog__item">
+            <div class="catalog__decor">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/catalog_item-2.jpg" width="360" height="580" alt="Pink App">
             <div class="catalog__info">
-              <h2><a href="#">Pink App</a></h2>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button type="button"><span>9900</span><span>&#8381;</span></button>
+              <h2 class="catalog__title"><a href="#">Pink App</a></h2>
+              <p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button>
             </div>                              
           </article>
           
           <article class="catalog__item">
+            <div class="catalog__decor">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/catalog_item-3.jpg" width="360" height="580" alt="Barbershop">
             <div class="catalog__info">
-              <h2><a href="#">Barbershop</a></h2>
-              <p>Сайт салона красоты.  Для мужчин, да.</p>
-              <button type="button"><span>9900</span><span>&#8381;</span></button>
+              <h2 class="catalog__title"><a href="#">Barbershop</a></h2>
+              <p class="catalog__text">Сайт салона красоты.  Для мужчин, да.</p>
+              <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button>
             </div>
           </article>
           
           <article class="catalog__item">
+            <div class="catalog__decor">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/catalog_item-4.jpg" width="360" height="580" alt="Mishka">
             <div class="catalog__info">
-              <h2><a href="#">Mishka</a></h2>
-              <p>Интернет-магазин  вязаных игрушек</p>
-              <button type="button"><span>9900</span><span>&#8381;</span></button>
+              <h2 class="catalog__title"><a href="#">Mishka</a></h2>
+              <p class="catalog__text">Интернет-магазин  вязаных игрушек</p>
+              <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button>
             </div>                              
           </article>
          
           <article class="catalog__item">
+            <div class="catalog__decor">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/catalog_item-5.jpg" width="360" height="580" alt="A Plus">
             <div class="catalog__info">
-              <h2><a href="#">A Plus</a></h2>
-              <p>Лендинг курсов повышения квалификации</p>
-              <button type="button"><span>9900</span><span>&#8381;</span></button> 
+              <h2 class="catalog__title"><a href="#">A Plus</a></h2>
+              <p class="catalog__text">Лендинг курсов повышения квалификации</p>
+              <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button> 
             </div>                             
           </article>
         
           <article class="catalog__item">
+            <div class="catalog__decor">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/catalog_item-6.jpg" width="360" height="580" alt="Кваст">
             <div class="catalog__info">
-              <h2><a href="#">Кваст</a></h2>
-              <p>Промо-сайт производителя  крафтового кваса</p>
-              <button type="button"><span>9900</span><span>&#8381;</span></button>   
+              <h2 class="catalog__title"><a href="#">Кваст</a></h2>
+              <p class="catalog__text">Промо-сайт производителя  крафтового кваса</p>
+              <button class="catalog__button" type="button"><span>9900</span><span>&#8381;</span></button>   
             </div>                           
           </article>
         </section>
@@ -207,6 +233,7 @@
           </li>
         </ul>
       </section>
+    </div>
 
       <section class="contact">
         <h2 class="visually-hidden">Контакты</h2>
@@ -216,7 +243,7 @@
         <div class="contact-info"> 
           <h3 class="contact-info__title">Nerds design studio</h3>
           <p class="contact-info__text">191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
-          <a class="contact-info__phone" href="tel:78122757575">тел. +7(812)275-75-75</a>
+          <a class="contact-info__phone" href="tel:78122757575" type="tel">тел. +7(812)275-75-75</a>
           <button class="contact-info__button" type="button">Напишите нам</button>
         </div>
       </section>

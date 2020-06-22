@@ -18,6 +18,7 @@
 	--gray-filter: #4d4d4d;
 	--gray-sort: #a6a6a6;
 	--gray-sort-active: #231f20;
+	--gray-sort-normal: #ededed;
 	--gray-footer: #444444;
 	--gray-catalog: #666666;
 	--gray-slider-active: #c1c1c1;
@@ -687,6 +688,8 @@ img {
   content: "";
   right: 90px;
   top: 78px;
+  background-color: transparent;
+  line-height: 0;
 }
 
 .modal__close:hover {
@@ -866,6 +869,11 @@ img {
 .page-catalog {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.page-catalog_wrapper {
+	display: flex;
+	flex-wrap: wrap;
 	padding: 0 140px; 
 }
 
@@ -904,6 +912,7 @@ img {
 .range-price {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .range__label {
@@ -1141,7 +1150,7 @@ img {
 	cursor: pointer;
 }
 
-.sort__button_current {
+.sort__button.m-current {
 	opacity: 1;
 }
 
@@ -1157,26 +1166,34 @@ img {
 .sort__up {
 	border: 0;
 	padding: 0;
-	width: 11px;
-  height: 10px;
-  color: var(--gray-sort);
-  opacity: 0.2;
+	line-height: 0;
+ 	background-color: transparent;
+ 	cursor: pointer;
 }
 
-.sort__down:hover,
-.sort__up:hover {
-	opacity: 1;
+.sort__down-svg path,
+.sort__up-svg path {
+	fill: var(--gray-sort-normal);
 }
 
-.sort__down:active,
-.sort__up:active {
-	background: var(--gray-sort-active);
+.sort__down:hover .sort__down-svg path, 
+.sort__up:hover .sort__up-svg path {
+	fill: var(--gray-sort);
 }
 
-.sort__down_current, 
-.sort__up_current {
-	background-image: var(--gray-sort-active);
+.sort__down:active .sort__down-svg path,
+.sort__up:active .sort__up-svg path {
+	fill: var(--gray-sort-active);
 }
+
+.sort__down.m-current .sort__down-svg path { 
+	fill: var(--gray-sort-active);
+}
+
+.sort__up.m-current .sort__down-svg path { 
+	fill: var(--gray-sort-active);
+}
+
 
 /*-------------CATALOG CARDS-----------*/
 
@@ -1184,6 +1201,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .catalog__item {
@@ -1191,6 +1209,31 @@ img {
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 23px;
+}
+
+.catalog__decor {
+	width: 360px;
+	display: flex;
+	align-items: center;
+	padding: 13px 16px;
+	border-radius: 4px 4px 0 0;
+	box-sizing: border-box;
+	background-color: var(--gray-filter);
+	opacity: 0.12;
+}
+
+.catalog__decor span {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin-right: 9px;
+	background-color: var(--basic-white);
+}
+
+.catalog__decor.m-current {
+	background-color: var(--gray-filter);
+	opacity: 1;
 }
 
 .catalog__info {
@@ -1200,12 +1243,22 @@ img {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 26px 50px 44px;
+	padding: 26px 50px 53px;
 	position: absolute;
 	bottom: 0;
 }
 
-.catalog__info a {
+.catalog__info.m-current {
+	display: flex;
+} 
+
+.catalog__title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.catalog__title a {
 	list-style: none;
 	font-weight: 700;
 	font-size: 18px;
@@ -1214,22 +1267,25 @@ img {
 	color: var(--basic-black);
 }
 
-.catalog__info a:hover {
+.catalog__title a:hover {
 	color: var(--basic-pink);
 }
 
-.catalog__info a:active {
+.catalog__title a:active {
 	opacity: 0.3;
 }
 
 
-.catalog__info p {
+.catalog__text {
 	line-height: 18px;
 	color: var(--gray-catalog);
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 33px;
 }
 
-.catalog__info button {
+.catalog__button {
 	font-family: inherit;
 	border-radius: 3px;
 	width: 200px;
@@ -1237,18 +1293,19 @@ img {
 	background-color: var(--basic-pink);
 	border: 0;
 	color: var(--basic-white);
+	cursor: pointer;
 }
 
-.catalog__info button:hover {
+.catalog__button:hover {
 	background-color: var(--basic-pink-hover);
 }
 
-.catalog__info button:active {
+.catalog__button:active {
 	background-color: var(--basic-pink-active);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.catalog__info span {
+.catalog__button span {
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -1263,16 +1320,22 @@ img {
 	box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 
+.catalog__item:hover .catalog__decor {
+	background-color: var(--gray-filter);
+	opacity: 1;
+}
+
 /*-------------PAGINATION---------------*/
 
 .pagination-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: right;
   margin: 0;
   padding: 0;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .pagination-list li {
