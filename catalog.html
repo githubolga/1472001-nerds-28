@@ -43,15 +43,21 @@
           <fieldset class="range">
             <legend class="range__title">Стоимость:</legend>
             <div class="range__content">
-              <div class="range__value" style="width: 85%"></div>
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
               <button class="range__button range__button_left" type="button"></button>
               <button class="range__button range__button_right" type="button"></button>
             </div> 
             <div class="range__price">
-              <label class="range__label" for="range-from">От</label>
-              <input class="range__input" id="range-from" type="text" value="0">
-              <label class="range__label" for="range-to">До</label>
-              <input class="range__input" id="range-to" type="text" value="15000">
+              <div>
+                <label class="range__label" for="range-from">От</label>
+                <input class="range__input" id="range-from" type="text" value="0">
+              </div>
+              <div>
+                <label class="range__label" for="range-to">До</label>
+                <input class="range__input" id="range-to" type="text" value="15000">
+              </div>
             </div>
           </fieldset>
 
@@ -75,7 +81,7 @@
 
             <fieldset class="filters__features">
               <legend class="filters__title">Особенности:</legend>
-              <ul class="filters__list">
+              <ul class="filters__list filters__list_checkbox">
                 <li class="filters__item">
                   <input id="filter-slider" class="filters__checkbox visually-hidden" type="checkbox" name="features" value="slider" checked>
                   <label class="filters__label" for="filter-slider">Слайдер</label>
@@ -139,7 +145,7 @@
               <span></span>
               <span></span>
             </div>
-            <img src="img/catalog_item-1.jpg" width="360" height="580" alt="Sedona">
+            <img src="img/catalog_item-1.jpg" width="360" height="578" alt="Sedona">
             <div class="catalog__info m-current">
               <h2 class="catalog__title"><a href="#">Sedona</a></h2>
               <p class="catalog__text">Информационный сайт для туристов</p>
@@ -153,7 +159,7 @@
               <span></span>
               <span></span>
             </div>
-            <img src="img/catalog_item-2.jpg" width="360" height="580" alt="Pink App">
+            <img src="img/catalog_item-2.jpg" width="360" height="578" alt="Pink App">
             <div class="catalog__info">
               <h2 class="catalog__title"><a href="#">Pink App</a></h2>
               <p class="catalog__text">Продуктовый лендинг приложения для iOS и Android</p>
