@@ -113,31 +113,33 @@
       </section>
 
       <section class="about-us">
-      	<div class="about-us__content">
-      		<h1 class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.
-      		</h1>
-	      	<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-	        </p>
-	        <h4 class="about-us__subtitle">Выполняем заказы на разработку:</h4>
-	        <ul class="about-us__list">
-	        	<li class="about-us__item">Веб-сайтов любой сложности</li>
-	        	<li class="about-us__item">Мобильных приложений для IOS и Android</li>
-	        	<li class="about-us__item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul> 
-        </div>  
-        <article class="statistic">                     
-	        <img class="statistic__logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии Nerds">
-	        <h4 class="statistic__title">С 2004 года любим точность во всем:</h4>
-	      	<ul class="statistic__list">
-	      		<li class="statistic__item">
-	      			<span class="statistic__count">146<sup>%</sup></span>Уровень самоотдачи
-	      		</li>
-	      		<li class="statistic__item">
-	      			<span class="statistic__count">100<sup>%</sup></span>Соблюдение сроков</li>
-	      		<li class="statistic__item">
-	      			<span class="statistic__count">50<sup>%</sup></span>Минимальная предоплата</li>
-	      	</ul>
-	      </article>
+      	<div class="about-us__wrapper">
+	      	<div class="about-us__content">
+	      		<h1 class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.
+	      		</h1>
+		      	<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+		        </p>
+		        <h4 class="about-us__subtitle">Выполняем заказы на разработку:</h4>
+		        <ul class="about-us__list">
+		        	<li class="about-us__item">Веб-сайтов любой сложности</li>
+		        	<li class="about-us__item">Мобильных приложений для IOS и Android</li>
+		        	<li class="about-us__item">Слайдшоу и видео для корпоративных презентаций</li>
+	          </ul> 
+	        </div>  
+	        <article class="statistic">                     
+		        <img class="statistic__logo" src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип студии Nerds">
+		        <h4 class="statistic__title">С 2004 года любим точность во всем:</h4>
+		      	<ul class="statistic__list">
+		      		<li class="statistic__item">
+		      			<span class="statistic__count">146<sup>%</sup></span>Уровень самоотдачи
+		      		</li>
+		      		<li class="statistic__item">
+		      			<span class="statistic__count">100<sup>%</sup></span>Соблюдение сроков</li>
+		      		<li class="statistic__item">
+		      			<span class="statistic__count">50<sup>%</sup></span>Минимальная предоплата</li>
+		      	</ul>
+					 </article>
+	    	</div>
 
 	      <ul class="clients">
 	        <li class="clients__item">
@@ -172,7 +174,7 @@
           <h3 class="contact-info__title">Nerds design studio</h3>
           <p class="contact-info__text">191186, Санкт-Петербург, <br> ул. Б.Конюшенная, д.19/8</p>
           <a class="contact-info__phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-          <button class="contact-info__button" type="button">Напишите нам</button>
+          <button class="contact-info__button js-modal-open" type="button">Напишите нам</button>
         </div>
       </section>
     </main>
@@ -201,31 +203,33 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal js-modal">
     	<div class="modal__content">
 	    	<div class="modal__header">
 		    	<h2 class="modal__title">Напишите нам</h2>
-		    	<button class="modal__close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
+		    	<button class="modal__close js-modal-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 000-1.414L19.285.3a1.003 1.003 0 00-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 00-1.414 0L.301 1.715a1.003 1.003 0 000 1.414L7.672 10.5.301 17.871a1.003 1.003 0 000 1.414l1.415 1.414a1.003 1.003 0 001.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 001.414 0l1.414-1.414a1.003 1.003 0 000-1.414L13.328 10.5z"/></svg></button>
 	    	</div>
-				<form class="mailto" action="https://echo.htmlacademy.ru" method="post">
+				<form class="mailto js-form" action="https://echo.htmlacademy.ru" method="post">
 					<div class="mailto__user">
 					<p class="mailto__item">
 						<label for="form-name">Ваше имя:</label>
-						<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+						<input id="form-name" class="js-name" type="text" name="name" placeholder="Имя Фамилия">
 					</p>
 	    		<p class="mailto__item">
 						<label for="form-email">Ваш email:</label>
-						<input id="form-email" type="email" name="email" placeholder="email@example.com">
+						<input id="form-email" class="js-email" type="email" name="email" placeholder="email@example.com">
 					</p>
 					</div>
 					<p class="mailto__item">
 						<label for="form-text">Текст письма:</label>
-						<textarea id="form-text" name="text" placeholder="В свободной форме"></textarea> 
+						<textarea id="form-text" class="js-text" name="text" placeholder="В свободной форме"></textarea> 
 					</p>
 					<button class="mailto__button" type="submit"><span>Отправить</span></button>
 	    	</form>
     	</div>
     </section>
+
+    <script src="./js/script.js"></script>
 	</body>
 </html>
 

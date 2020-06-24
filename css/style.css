@@ -431,12 +431,15 @@ img {
 /*------------------ABOUT-US---------------*/
 
 .about-us {
+	padding: 0 140px 0 140px;
+	margin-bottom: 79px;
+}
+
+.about-us__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 140px 0 140px;
-	border-top: 2px solid var(--basic-grey);
-	margin-bottom: 79px;
+	border-top: 2px solid var(--basic-gray);
 }
 
 .about-us__content {
@@ -670,16 +673,20 @@ img {
 
 
 .modal {
-	position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   visibility: hidden;
- }
+}
 
- .modal.md-show {
+.modal.md-show {
  	visibility: visible;
- }
+}
+
+.modal.md-error .modal__content {
+ 	animation: error 2s;
+}
 
 .modal__content {
 	width: 960px;
@@ -732,6 +739,28 @@ img {
 
 .modal__close:active {
 	opacity: 0.1;
+}
+
+@keyframes error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .mailto__user {
