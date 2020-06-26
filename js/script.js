@@ -19,13 +19,13 @@ buttonClose.addEventListener("click", function (evt) {
 });
 
 modalForm.addEventListener("submit", function (evt) {
+	cosole.log(formName.value, formEmail.value, formText.value);
   if (!formName.value || !formEmail.value || !formText.value) {
     evt.preventDefault(); 
     modal.classList.add("md-error");
     setTimeout(() => {
-    	console.log(123);
-    	modal.classList.remove("md-error"), 2000
-    });
+			modal.classList.remove('md-error');
+		}, 2000);
   } 
 });
 
@@ -34,7 +34,7 @@ window.addEventListener("keydown", function (evt) {
     if (modal.classList.contains("md-show")) {
       evt.preventDefault();
       modal.classList.remove("md-show");
-      // loginPopup.classList.remove("md-error");
+      modal.classList.remove("md-error");
     }
   }
 });
