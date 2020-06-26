@@ -123,9 +123,8 @@ img {
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
-	margin: 72px 0 0 0;
+	margin: 78px 0 0 0;
 	padding-bottom: 107px;
-	padding-right: 17px;
 }
 
 .logo {
@@ -614,9 +613,17 @@ img {
 	background-image: url("../img/map-marker.png"); 
 }
 
+.contact.map-show:before {
+	display: none;
+}
+
 .contact__map {
 	width: 100%;
 	height: 416px;
+}
+
+.contact.map-show .contact__img {
+	display: none;
 }
 
 .contact-info {
@@ -910,7 +917,7 @@ img {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-right: 131px;
+  margin-right: 139px;
 }
 
 .social__item {
@@ -1340,7 +1347,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .catalog__item {
@@ -1348,7 +1355,8 @@ img {
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	margin-bottom: 23px;
+	margin-bottom: 30px;
+	line-height: 0;
 }
 
 .catalog__decor {
@@ -1382,7 +1390,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 26px 50px 53px;
+	padding: 26px 50px 44px;
 	position: absolute;
 	bottom: 0;
 }
