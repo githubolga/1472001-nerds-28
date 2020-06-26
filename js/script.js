@@ -5,7 +5,7 @@ var modalForm = modal.querySelector(".js-form");
 var formName = modalForm.querySelector(".js-name");
 var formEmail = modalForm.querySelector(".js-email");
 var formText = modalForm.querySelector(".js-text");
-var map = document.querySelector(".js-map");
+var mapWrapper = document.querySelector(".js-map");
 
 
 buttonOpen.addEventListener("click", function (evt) {
@@ -25,7 +25,7 @@ modalForm.addEventListener("submit", function (evt) {
   if (!formName.value || !formEmail.value || !formText.value) {
     evt.preventDefault(); 
     modal.classList.add("md-error");
-    setTimeout(() => {
+    setTimeout(function() {
 			modal.classList.remove("md-error");
 		}, 2000);
   } 
@@ -44,7 +44,7 @@ window.addEventListener("keydown", function (evt) {
 ymaps.ready(map);
 
 function map () {
-	map.classList.add("map-show");
+	mapWrapper.classList.add("map-show");
   
   var myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=75dd7812-1592-480a-add1-2fe184f916b1" type="text/javascript"></script>
   </head>
   <body>
     <header class="header header_catalog">
@@ -242,10 +242,10 @@
         </section>
       </div>
 
-      <section class="contact">
+      <section class="contact js-map">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contact__map">
-          <img src="img/map.jpg" width="1440" height="416" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <div class="contact__map" id="map">
+          <img class="contact__img" src="img/map.jpg" width="1440" height="416" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
         </div>
         <div class="contact-info"> 
           <h3 class="contact-info__title">Nerds design studio</h3>
@@ -308,6 +308,6 @@
       </div>
     </section>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
